@@ -1,0 +1,640 @@
+```css
+/* ================================
+   الإعدادات العامة
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fbff;
+    color: #172033;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbe7f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* الشعار */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #071a3d;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1261c9;
+    color: #ffffff;
+
+    border-radius: 10px;
+}
+
+
+/* القائمة */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    color: #64748b;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #1261c9;
+}
+
+
+/* زر التواصل في الهيدر */
+
+.nav-button {
+    background-color: #1261c9;
+
+    color: #ffffff;
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #071a3d;
+}
+
+
+/* ================================
+   Page Hero
+================================ */
+
+.page-hero {
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    text-align: center;
+
+    padding: 90px 20px 75px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    color: #1261c9;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+.page-hero h1 {
+    color: #071a3d;
+
+    font-size: 48px;
+
+    margin-bottom: 18px;
+}
+
+.page-hero p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+
+/* ================================
+   Contact Section
+================================ */
+
+.contact-section {
+    padding: 90px 0;
+}
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* ================================
+   Contact Information
+================================ */
+
+.contact-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.section-heading span {
+    color: #1261c9;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    color: #071a3d;
+
+    font-size: 32px;
+
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   Contact Cards
+================================ */
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe7f5;
+
+    border-radius: 16px;
+
+    box-shadow: 0 15px 40px rgba(7, 42, 91, 0.08);
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #60a5fa;
+
+    box-shadow: 0 20px 45px rgba(7, 42, 91, 0.14);
+}
+
+
+/* أيقونة البطاقة */
+
+.contact-icon {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eff6ff;
+
+    border-radius: 15px;
+
+    font-size: 26px;
+}
+
+
+/* النص */
+
+.contact-card h3 {
+    color: #071a3d;
+
+    font-size: 18px;
+
+    margin-bottom: 6px;
+}
+
+.contact-card p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.contact-card small {
+    color: #1261c9;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   Contact Form
+================================ */
+
+.contact-form-box {
+    background-color: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    border: 1px solid #dbe7f5;
+
+    box-shadow: 0 15px 40px rgba(7, 42, 91, 0.10);
+}
+
+.contact-form-box h2 {
+    color: #071a3d;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.contact-form-box > p {
+    color: #64748b;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   Form
+================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #071a3d;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dbe7f5;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    color: #172033;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.10);
+}
+
+.form-group textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+
+/* ================================
+   Submit Button
+================================ */
+
+.contact-submit {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #1261c9;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-submit:hover {
+    background-color: #071a3d;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.cta {
+    background: linear-gradient(
+        135deg,
+        #071a3d,
+        #0b2a5b
+    );
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    color: #ffffff;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #dbeafe;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+.btn-light {
+    display: inline-block;
+
+    background-color: #ffffff;
+
+    color: #1261c9;
+
+    padding: 13px 25px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+.footer {
+    background-color: #071a3d;
+
+    color: #ffffff;
+
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-bottom: 40px;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #cbd5e1;
+
+    max-width: 450px;
+
+    line-height: 1.8;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    align-content: flex-start;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        padding: 15px 0;
+    }
+
+    .nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .page-hero {
+        padding: 60px 15px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-form-box {
+        padding: 25px 18px;
+    }
+
+    .contact-form-box h2 {
+        font-size: 25px;
+    }
+
+    .contact-card {
+        padding: 18px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+}
+```
