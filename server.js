@@ -5,7 +5,7 @@ const { Resend } = require("resend");
 const mysql = require("mysql2/promise");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ===============================
 // Resend
@@ -170,11 +170,9 @@ app.post("/api/contact", async (req, res) => {
 // ===============================
 // تشغيل السيرفر
 // ===============================
+app.listen(PORT, "0.0.0.0", async () => {
 
-app.listen(PORT, async () => {
-
-    console.log(`Server is running on http://localhost:${PORT}`);
-
+    console.log(`Server is running on port ${PORT}`);
     await testDatabase();
 
 });
